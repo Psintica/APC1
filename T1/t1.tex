@@ -1,0 +1,78 @@
+\documentclass[a4paper]{article}
+
+
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[compat=1.0.0]{tikz-feynman}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\usepackage{subfig}
+
+\title{Astronomy Project Task 1}
+% \author{Aman Kumar}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+So in this task we will try to explore the world of python programming a bit. Python is one of the simplest and most used language 
+in the domain of modern astronomy. Since everyone is not equally familiar with the language and programming as whole, we will try to start from the very basics 
+and then move forward towards more complex stuff. 
+
+Right here are the resources that one can use to learn or refresh their python programming knowledge. 
+\begin{enumerate}
+    \item A single 4 hour video from FreeCode Camp : \url{ https://www.youtube.com/watch?v=rfscVS0vtbw }
+    \item A comprehensive course on python from FreeCode Camp : \url{https://www.freecodecamp.org/learn/scientific-computing-with-python/#python-for-everybody}
+    \item A simlpe Google Colab Tutorial : \url{https://www.youtube.com/watch?v=i-HnvsehuSw}
+\end{enumerate}
+
+
+
+The above links to tutorials will help you get started with this week's task. 
+\\
+Please note that Google Colab Notebook is quite important here as we will be using Colab notebooks or just Jupyter Notebooks for our tasks. 
+Don't worry if you don't know what Jupyter Notebooks are. There will be some links in the resources section that will help you to gain more info about them and many other stuff that will come along the way. 
+
+\section{Tasks 1.1}
+In this section we will go through different programming tasks one needs to do for this task. 
+You'll have to perform all the tasks in a Jupyter Notebook / Colab Notebook and then submit the Notebook. Also for this task you shouldn't use libraries like numpy, pandas and matplotlib. 
+Just use the native libraries available by default with Python.
+
+\begin{enumerate}
+    \item Write a function to check if a number is Prime or not. It should take the number as input and return `True` or `False` based on if number is Prime or Not.
+    \item Make an array with numbers arranged from 0 to 1000. Then for the same array generate a mask array based on Primality. Example: If the array is `[1,2,3,4,5,6,7,8,9]' the mask array should be `[False, True, True, False, True, False, True, False, False]`. This kind of masks are quite important and we will see them later when we are on serious stuff. Note : Don't use Numpy.  \emph{Hint: You need to use the Prime checking funstion you made above.}
+    \item For the first 1000 prime numbers, find their mean and standard deviation.
+    \item Make a 2D array with size \emph{4 x 4} and then set values of center 4 positions to be 1 while rest of the values should be zero. \emph{Hint: Try drawing the 4 x 4 matrix on a piece of paper and then visualise center 4 boxes with value 1 to be surrounded by boxes with value 0.}
+    \item Now surround zeroes with 1 (Center 4 boxes are 0, while boundary is 1). Find out the mean of the matrices in both the cases.
+\end{enumerate}
+
+
+\section{Tasks 1.2}
+These are some optional tasks you can try doing. These will help you in future while working.
+\begin{enumerate}
+    \item So you have the matrix of first 1000 numbers you made in assignment 2 above. Try storing it in a csv file named `1000.csv`. \emph{Hint: Look for CSV and OS libraries. Search internet. Stack Exchange and Python Documentaions are your bestfriends when you are programming.}
+    \item Now split the above array into smaller arrays of 100 numbers each. (Do not make new arrays, use array indexing and slicing to get required elements from the pre made array.) You'll have 10 smaller arrays now, save them in 10 different CSVs now, named `1.csv, 2.csv .... 10.csv`.
+    \item You have total of 11 CSVs now.  "1000.csv" and set of "1.csv,2.csv ... 10.csv" find out the file size of each csv file. See how's the file size of "1000.csv" compared to file size of "1.csv,2.csv ... 10.csv" summed up together.
+    \item Try storing the the two 2D arrays you made in assignment 4 and 5 in CSVs named "zero.csv" and "one.csv". Compare their file size. 
+\end{enumerate}
+
+\section{Comments on the Task1}
+At first glance the tasks will look quite boring to someone who already knows a bit of python but trust me they are quite important for future. 
+We usually come across such trivial tasks during the data preparation and cleaning part of our projects. You'll see them in future. Thus one should do the assignments suggested above with some seriousness. 
+Also one can also do some little experimenting and see how does these tasks scale. Like instead of saving 1000 numbers into the csv file, what will happend when we save 10,000 numbers in it. What is the percentage change in file size. Take it little forward and make it 100,000, what's the percentage change in size now. 
+Like wise from the assignment 4 and 5 in the section "Tasks 1.1" try chnaging 4 x 4 for to 5 x 5 , 6 x 6 ... till 10 x 10. Check the percentage change in difference between the mean in zero and one matrix for each case.
+\\ \\
+\textbf{ Try finishing the tasks before the deadline (will be declared in the discord server.) }
+\end{document}
